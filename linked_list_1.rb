@@ -1,3 +1,5 @@
+# A node in a linked list contains a value and a pointer
+# to the next node in the list.
 class LinkedListNode
   attr_accessor :value, :next_node
  
