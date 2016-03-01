@@ -5,7 +5,7 @@ input = gets.chomp.to_i
 n = 0
 
 # Iterate until n equals input given by user
-while n <= input
+until n == input
   # Add one to n each iteration until n equals input
   n += 1
   # If n is divisible by 3 and 5, print "fizzbuzz"
