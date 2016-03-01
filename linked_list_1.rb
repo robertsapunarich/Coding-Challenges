@@ -25,9 +25,6 @@ class Stack
   # Remove the last item that was pushed onto the
   # stack and return the value to the user
   def pop
-    # popped = @data.value
-    # @data = @data.next_node
-    # return popped
     @data
   end
 
