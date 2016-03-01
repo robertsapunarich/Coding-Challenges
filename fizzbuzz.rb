@@ -7,7 +7,7 @@ n = 0
 # Iterate until n equals input given by user
 while n <= input
   # Add one to n each iteration until n equals input
-  n = n + 1
+  n += 1
   # If n is divisible by 3 and 5, print "fizzbuzz"
   if n % 3 == 0 && n % 5 == 0
     puts "fizzbuzz"
