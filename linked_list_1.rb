@@ -25,9 +25,10 @@ class Stack
   # Remove the last item that was pushed onto the
   # stack and return the value to the user
   def pop
-    popped = @data.value
-    @data = @data.next_node
-    return popped
+    # popped = @data.value
+    # @data = @data.next_node
+    # return popped
+    @data
   end
 
 end
@@ -49,7 +50,7 @@ def reverse_list(list)
     reversed.push(list.value)
     list = list.next_node
   end
-  return reversed.data
+  reversed.pop
 end
 
 node1 = LinkedListNode.new(37)
