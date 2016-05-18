@@ -1,4 +1,11 @@
+// Use `readline-sync` to get user input.
 var readlineSync = require('readline-sync');
+
+/* ordinal function takes in a digit. If the digit is between 10 and 20, it
+returns the digit plus 'th'. If a digits remainder after being divided by 10
+is 1, it appends 'st' to the returned digit. If the remainder is 2, it appends
+'nd'. If the remainder is 3, it appends 'rd'. Finally, in all other cases, it
+appends 'th' to the digit. Numbers in the teens are treated as edge cases. */
 
 var ordinal = function( digit ) {
   if ( digit > 10 && digit < 20 ) {
@@ -18,6 +25,8 @@ var ordinal = function( digit ) {
   }
 }
 
-var digit = parseInt( readlineSync.question("Enter a digit: ") );
+// store user input in digit variable after converting it to an integer.
+var input = parseInt( readlineSync.question("Enter a digit: ") );
 
-console.log(ordinal(digit));
+// log the returned value of the `ordinal` function to the console.
+console.log(ordinal(input));
